@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Settings</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="profileSetting.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="image/project logo.png" alt="Logo" class="logo">
+            </a>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" placeholder="Search" class="search-input">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+
+            <div class="nav-right">
+                <!-- Notification Icon -->
+                <div class="notification-container">
+                    <img src="./image/notification-bing.png" alt="Notifications" class="notification-icon">
+                </div>
+
+                <!-- Profile Image -->
+                <div class="profile-nav">
+                    <img src="./image/Profile image.png" alt="Profile" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Settings Section -->
+    <section class="profile-section">
+        <div class="container">
+            <div class="welcome-header">
+                <h1>Welcome, Anushka</h1>
+            </div>
+
+            <div class="profile-content">
+                <!-- Profile Image and Edit Button -->
+                <div class="profile-header">
+                    <div class="profile-left">
+                        <div class="profile-image-container">
+                            <img src="./image/Profile image.png" alt="Anushka" class="profile-image">
+                        </div>
+                        <div class="profile-email">
+                            <p>anushkakhadgi@gmail.com</p>
+                            <span>1 month ago</span>
+                        </div>
+                    </div>
+                    <button class="edit-btn" onclick="window.location.href='./profile.html'">Done</button>
+                </div>
+
+                <!-- Profile Form -->
+                <div class="profile-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input type="text" class="form-control" value="Anushka">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input type="text" class="form-control" value="Khadgi">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Gender</label>
+                                <select class="form-control">
+                                    <option>Female</option>
+                                    <option>Male</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>District</label>
+                                <select class="form-control">
+                                    <option>Kathmandu</option>
+                                    <option>Bhaktapur</option>
+                                    <option>Lalitpur</option>
+                                    <option>Achham</option>
+                                    <option>Arghakhanchi</option>
+                                    <option>Baglung</option>
+                                    <option>Baitadi</option>
+                                    <option>Bajhang</option>
+                                    <option>Bajura</option>
+                                    <option>Banke</option>
+                                    <option>Bara</option>
+                                    <option>Bardiya</option>
+                                    <option>Bhojpur</option>
+                                    <option>Chitwan</option>
+                                    <option>Dadeldhura</option>
+                                    <option>Dailekh</option>
+                                    <option>Dang</option>
+                                    <option>Darchula</option>
+                                    <option>Dhading</option>
+                                    <option>Dhankuta</option>
+                                    <option>Dhanusa</option>
+                                    <option>Dolakha</option>
+                                    <option>Dolpa</option>
+                                    <option>Doti</option>
+                                    <option>Gorkha</option>
+                                    <option>Gulmi</option>
+                                    <option>Humla</option>
+                                    <option>Ilam</option>
+                                    <option>Jajarkot</option>
+                                    <option>Jhapa</option>
+                                    <option>Jumla</option>
+                                    <option>Kailali</option>
+                                    <option>Kalikot</option>
+                                    <option>Kanchanpur</option>
+                                    <option>Kapilvastu</option>
+                                    <option>Kaski</option>
+                                    <option>Kavrepalanchok</option>
+                                    <option>Khotang</option>
+                                    <option>Lamjung</option>
+                                    <option>Mahottari</option>
+                                    <option>Makwanpur</option>
+                                    <option>Manang</option>
+                                    <option>Morang</option>
+                                    <option>Mugu</option>
+                                    <option>Mustang</option>
+                                    <option>Myagdi</option>
+                                    <option>Nawalparasi East</option>
+                                    <option>Nawalparasi West</option>
+                                    <option>Nuwakot</option>
+                                    <option>Okhaldhunga</option>
+                                    <option>Palpa</option>
+                                    <option>Panchthar</option>
+                                    <option>Parbat</option>
+                                    <option>Parsa</option>
+                                    <option>Pyuthan</option>
+                                    <option>Ramechhap</option>
+                                    <option>Rasuwa</option>
+                                    <option>Rautahat</option>
+                                    <option>Rolpa</option>
+                                    <option>Rukum East</option>
+                                    <option>Rukum West</option>
+                                    <option>Rupandehi</option>
+                                    <option>Salyan</option>
+                                    <option>Sankhuwasabha</option>
+                                    <option>Saptari</option>
+                                    <option>Sarlahi</option>
+                                    <option>Sindhuli</option>
+                                    <option>Sindhupalchok</option>
+                                    <option>Siraha</option>
+                                    <option>Solukhumbu</option>
+                                    <option>Sunsari</option>
+                                    <option>Surkhet</option>
+                                    <option>Syangja</option>
+                                    <option>Tanahu</option>
+                                    <option>Taplejung</option>
+                                    <option>Terhathum</option>
+                                    <option>Udayapur</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Language</label>
+                                <select class="form-control">
+                                    <option>Nepali</option>
+                                    <option>English</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Time Zone</label>
+                                <select class="form-control">
+                                    <option>Nepal Time (GMT+5:45)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="email-section">
+                        <label>My email Address</label>
+                        <div class="email-box">
+                            <i class="fas fa-envelope"></i>
+                            <span>anushkakhadgi@gmail.com</span>
+                            <span class="time-ago">1 month ago</span>
+                        </div>
+                        <a href="#" class="add-email">+ Add Email Address</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

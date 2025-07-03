@@ -1,0 +1,245 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f6f7fb;
+}
+
+.container {
+    max-width: 1100px;
+}
+
+/* Card and Section Styles */
+.bg-white {
+    background: #fff !important;
+}
+
+.shadow-sm {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04) !important;
+}
+
+.rounded {
+    border-radius: 16px !important;
+}
+
+.border-primary {
+    border-color: #2196f3 !important;
+}
+
+/* Header Section */
+.border-primary {
+    border-width: 2px !important;
+}
+
+.fw-bold {
+    font-weight: 700 !important;
+}
+
+.fw-semibold {
+    font-weight: 600 !important;
+}
+
+.text-primary {
+    color: #2196f3 !important;
+}
+
+/* How It Works Stepper */
+.bg-primary {
+    background: #2196f3 !important;
+}
+
+.text-primary {
+    color: #2196f3 !important;
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+/* Stats Row */
+.fs-4 {
+    font-size: 2rem !important;
+}
+
+/* Model Summary */
+.border {
+    border: 1px solid #e3e6ee !important;
+}
+
+/* Example Recognition */
+.bg-light {
+    background: #f6f7fb !important;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 767px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .row.g-3 > [class^='col-'] {
+        margin-bottom: 1rem;
+    }
+    .rounded {
+        border-radius: 10px !important;
+    }
+}
+
+/* Remove default ul padding in quick notes */
+ul.ps-3 {
+    padding-left: 1.2rem !important;
+}
+
+/* Example Recognition images */
+.bg-light img {
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+/* Section titles */
+h5.fw-bold, h3.fw-bold {
+    color: #222;
+}
+
+/* Subtle card hover effect */
+.bg-white:hover, .bg-light:hover {
+    box-shadow: 0 4px 16px rgba(33,150,243,0.08) !important;
+    transition: box-shadow 0.2s;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    padding: 20px 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    height: 70px;
+    transition: transform 0.2s;
+}
+
+.logo:hover {
+    transform: scale(1.08) rotate(-2deg);
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: 500;
+    margin: 0 15px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #0073e6;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #0073e6;
+    transition: width 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+.nav-buttons .btn {
+    margin-left: 10px;
+    padding: 8px 20px;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.nav-buttons .btn-primary:hover {
+    background: #005bb5;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 115, 230, 0.2);
+}
+
+.nav-buttons .btn-outline-primary:hover {
+    background: #0073e6;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 115, 230, 0.2);
+    border-color: #0073e6;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        padding: 1rem 0;
+    }
+
+    .nav-buttons {
+        margin-top: 1rem;
+        justify-content: center;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+/* Example Recognition custom styles */
+.example-img {
+    max-height: 200px;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+    box-shadow: 0 1px 4px rgba(33,150,243,0.04);
+}
+
+.example-img:hover {
+    transform: scale(1.08) rotate(-2deg);
+    box-shadow: 0 8px 24px rgba(33,150,243,0.15);
+    z-index: 2;
+}
+
+.bg-light {
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.bg-light:hover {
+    box-shadow: 0 8px 32px rgba(33,150,243,0.12) !important;
+    transform: translateY(-4px) scale(1.01);
+    z-index: 1;
+}
+
+.example-percent {
+    font-size: 1.5rem;
+    color: #2196f3 !important;
+}
+
+.example-confidence {
+    color: #222;
+    font-size: 0.95rem;
+}
+
+/* How It Works icon animation */
+.bg-primary.rounded-circle {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bg-primary.rounded-circle:hover {
+    transform: scale(1.12) rotate(-4deg);
+    box-shadow: 0 4px 16px rgba(33,150,243,0.18);
+}

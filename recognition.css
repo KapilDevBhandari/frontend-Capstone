@@ -1,0 +1,501 @@
+/* Recognition Page Styles */
+.recognition-section {
+    padding: 2rem 0;
+    background-color: #f8f9fa;
+    min-height: calc(100vh - 70px);
+}
+
+.recognition-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.recognition-header h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.recognition-header .subtitle {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+/* Video Section Styles */
+.video-section {
+    background: #F1F5F9;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+#videoFeed {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1;
+    font-size: 0.9rem;
+}
+
+.recording-status {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    background: #2ecc71;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.status-text {
+    color: white;
+    font-size: 0.9rem;
+}
+
+.video-controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.control-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.start-btn {
+    background: #3498db;
+    color: white;
+}
+
+.start-btn:hover {
+    background: #2980b9;
+}
+
+.stop-btn {
+    background: #e74c3c; /* Red background for stop button */
+    color: white;
+}
+
+.stop-btn:hover {
+    background: #c0392b;
+}
+
+.play-btn {
+    background: #f1f1f1;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.play-btn:hover {
+    background: #e0e0e0;
+}
+
+.speed-control {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.speed-control span {
+    margin-right: 0.5rem;
+    color: #555;
+}
+
+.speed-select {
+    width: 80px;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.control-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* New wrapper for bottom sections */
+.bottom-sections-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Changed to 1fr 1fr for equal width */
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Results Section Styles */
+.results-section {
+    background: #F1F5F9;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.results-header {
+    margin-bottom: 1.5rem;
+}
+
+.results-header h2 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.recognition-textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #333;
+    resize: vertical;
+    min-height: 150px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.submit-correction-btn {
+    background: #3498db;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-correction-btn:hover {
+    background: #2980b9;
+}
+
+/* Share & Download Section Styles */
+.share-download-section {
+    background: #F1F5F9;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 0; /* No margin-top needed when grouped */
+}
+
+.share-download-header h2 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.share-download-content {
+    display: flex;
+    gap: 1rem;
+}
+
+.download-video-btn, .share-video-btn {
+    flex: 1;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.download-video-btn {
+    background: #3498db;
+    color: white;
+}
+
+.download-video-btn:hover {
+    background: #2980b9;
+}
+
+.share-video-btn {
+    background: #f1f1f1;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.share-video-btn:hover {
+    background: #e0e0e0;
+}
+
+/* Navigation Styles */
+.navbar {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 15px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #0073e6;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #0073e6;
+    transition: width 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.logo {
+    height: 70px;
+    width: auto;
+    transition: transform 0.2s;
+}
+
+.logo:hover {
+    transform: scale(1.08) rotate(-2deg);
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-left: auto;
+}
+
+.notification-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.notification-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.notification-icon:hover {
+    opacity: 0.8;
+}
+
+.profile-nav {
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+/* Related Signs Section Styles */
+.related-signs-section {
+    padding: 2rem 0;
+    background-color: #f8f9fa;
+}
+
+.related-signs-section h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.signs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.related-signs-content-wrapper {
+    background-color: #F8FAFC;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.related-signs-content-wrapper h2 {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.sign-card {
+    background: #F1F5F9;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    background-color: #F1F5F9;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.sign-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.confidence-percent {
+    font-size: 0.9rem;
+    color: #3498db;
+    font-weight: 500;
+}
+
+.sign-image-container {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    background-color: #F1F5F9;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.sign-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .bottom-sections-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .recognition-header h1 {
+        font-size: 2rem;
+    }
+
+    .video-controls {
+        flex-direction: column;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .nav-right {
+        gap: 1rem;
+    }
+
+    .logo {
+        height: 32px;
+    }
+
+    .profile-img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.notification-container a,
+.profile-nav a {
+    text-decoration: none;
+    display: block;
+}
+
+.notification-icon,
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.notification-container a:hover .notification-icon,
+.profile-nav a:hover .profile-img {
+    transform: scale(1.1);
+} 

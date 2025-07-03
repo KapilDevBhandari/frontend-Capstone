@@ -1,0 +1,146 @@
+/* Dataset Section Styles */
+.dataset-section {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.dataset-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.dataset-description {
+    max-width: 1000px;
+    margin: 0 auto 60px;
+    color: #666;
+    line-height: 1.8;
+}
+
+.dataset-description p {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+/* Styles for the description boxes */
+.description-box {
+    background-color: #F1F5F9; /* Background color as requested */
+    padding: 20px; /* Add some padding inside the box */
+    margin-bottom: 20px; /* Add space between boxes */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.description-box:hover {
+    box-shadow: 0 6px 24px rgba(0, 123, 255, 0.15), 0 1.5px 6px rgba(0,0,0,0.08);
+    transform: translateY(-4px) scale(1.03);
+}
+
+.description-box h3 {
+    font-weight: normal; /* Set font weight to normal */
+    margin-top: 0;
+    margin-bottom: 10px; /* Space below the heading */
+    color: #333; /* Dark grey color for headings */
+}
+
+.description-box h3 .emoji {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.description-box:hover h3 .emoji {
+    transform: scale(1.25) rotate(-10deg);
+}
+
+/* Statistics Cards */
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, #007bff, #00c3ff);
+    border-radius: 15px;
+    padding: 30px 50px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.2);
+    transition: transform 0.3s ease;
+    min-width: 200px;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .dataset-title {
+        font-size: 32px;
+    }
+
+    .dataset-description {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .dataset-title {
+        font-size: 28px;
+    }
+
+    .dataset-description p {
+        font-size: 15px;
+    }
+
+    .stat-card {
+        padding: 20px 30px;
+    }
+}
+
+body {
+    font-family: 'Rubik', sans-serif; /* Use Rubik font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #ffffff;
+}
+
+/* Add logo styles */
+.logo {
+    height: 70px;  /* Increased logo size */
+    transition: transform 0.2s;
+}
+
+.logo:hover {
+    transform: scale(1.08) rotate(-2deg);
+} 

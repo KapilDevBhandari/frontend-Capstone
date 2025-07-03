@@ -1,0 +1,379 @@
+/* Basic styles for the About page based on the provided image */
+
+body {
+    font-family: 'Rubik', sans-serif; /* Use Rubik font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 15px; /* Add horizontal padding */
+}
+
+.section {
+    padding: 40px 15px; /* Keep horizontal padding */
+    margin: 30px 0; /* Remove horizontal margin, keep bottom margin */
+    background: #F1F5F9; /* Changed background color */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-section {
+    margin-top: 0; /* Remove top margin, will be handled by parent container's margin */
+}
+
+.about-us-section h1 {
+    color: #007bff; /* Example primary color */
+    margin-top: 0;
+}
+
+.about-us-section h1 .blue-text {
+    color: #007bff; /* Example blue color - adjust to match your design */
+    font-weight: bold; /* Make the Inclusive Voice text bold */
+}
+
+.about-us-section h2 {
+    font-weight: bold; /* Make the About Us heading bold */
+}
+
+.our-goal-section, .our-story-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.our-goal-section .container, .our-story-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.our-goal-section .container div, .our-story-section .container div {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.section-image, .section-icon {
+    max-width: 60%; /* Reduced image size to fit well within its column */
+    height: auto;
+    display: block; /* Ensures it behaves as a block element */
+    margin: auto; /* Center image within its column */
+}
+
+.project-highlights-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.highlights {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px; /* Increased space between highlight items */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.highlight-item {
+    background: #007bff; /* Example primary color */
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center; /* Keep center alignment for the box content as a whole if needed, or remove if all text should be left */
+    width: 30%; /* Adjust width as needed for responsiveness */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.highlight-item:hover {
+    transform: translateY(-5px); /* Simple hover effect */
+}
+
+.highlight-item h3 {
+    color: #fff;
+    margin-top: 0;
+}
+
+.highlight-item p {
+    text-align: left; /* Align paragraph text to the left */
+}
+
+.main-content {
+    margin-top: 30px; /* Add top margin to the main content container */
+    padding-left: 50px; /* Increased padding to the left */
+}
+
+/* Basic responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+
+    .section {
+        margin: 20px 0; /* Remove horizontal margin, keep bottom margin */
+    }
+
+    .about-us-section {
+        margin-top: 0; /* Remove top margin */
+    }
+
+    .main-content {
+        margin-top: 20px; /* Adjust top margin for smaller screens */
+        padding-left: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .our-goal-section, .our-story-section {
+        flex-direction: column;
+    }
+
+    .our-goal-section .container, .our-story-section .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .our-goal-section .container div, .our-story-section .container div {
+        padding: 10px 0;
+    }
+
+    .section-image, .section-icon {
+        max-width: 70%; /* Adjust size for smaller screens */
+        margin: 20px auto; /* Center images on smaller screens */
+    }
+
+    .highlights {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .highlight-item {
+        width: 80%; /* Make items wider on smaller screens */
+    }
+}
+
+/* Styles for the new boxes section */
+
+
+.boxes-section .main-box h2 {
+    /* Keeping h2 styles if needed, but remove if it was just for the main box */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.boxes-section h2 {
+    font-weight: bold; /* Make the heading bold */
+    margin-bottom: 30px; /* Add space below the heading */
+}
+
+.boxes-section .inner-box {
+    background-color: #e9ecef; /* Light grey background for inner boxes */
+    padding: 20px;
+    border-radius: 15px; /* Further increased border-radius for rounder edges */
+    margin-top: 15px; /* Space above inner boxes if they stack */
+    margin-bottom: 40px; /* Increased space below inner boxes */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to inner boxes */
+}
+
+.boxes-section .row {
+    /* Keeping row styles if needed */
+    margin-left: -15px; /* Counteract Bootstrap row negative margin */
+    margin-right: -15px; /* Counteract Bootstrap row negative margin */
+}
+
+.boxes-section .col-md-6 {
+    /* Keeping col styles if needed */
+    padding-left: 15px; /* Restore padding lost to row negative margin */
+    padding-right: 15px; /* Restore padding lost to row negative margin */
+}
+
+@media (min-width: 768px) {
+    .boxes-section .inner-box {
+        margin-top: 0; /* Remove top margin when side-by-side */
+    }
+}
+
+.boxes-section .inner-box h3 {
+    font-weight: bold; /* Make h3 bold */
+    text-align: center; /* Center h3 as a title */
+    margin-bottom: 10px; /* Add some space below the title */
+}
+
+.boxes-section .inner-box p {
+    text-align: left; /* Ensure paragraph text is left-aligned */
+    max-width: 85%; /* Decrease the width of the paragraph text */
+    margin: 0 auto; /* Center the text block */
+    /* text-align: center; */ /* Removed center alignment for text */
+}
+
+/* Navbar Styles */
+.navbar {
+    padding: 20px 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    height: 40px;
+    transition: transform 0.2s;
+}
+
+.logo:hover {
+    transform: scale(1.08) rotate(-2deg);
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: 500;
+    margin: 0 15px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #0073e6;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #0073e6;
+    transition: width 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+.nav-buttons .btn {
+    margin-left: 10px;
+    padding: 8px 20px;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.nav-buttons .btn-primary:hover {
+    background: #005bb5;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 115, 230, 0.2);
+}
+
+.nav-buttons .btn-outline-primary:hover {
+    background: #0073e6;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 115, 230, 0.2);
+    border-color: #0073e6;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .nav-buttons {
+        margin-top: 1rem;
+        justify-content: center;
+    }
+}
+
+.team-section {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    margin-top: 40px;
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.team-desc {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-row {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 24px 16px 18px 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+    margin-bottom: 20px;
+    flex: 1 1 180px;
+    max-width: 220px;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-photo {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #007bff;
+    background: #e9ecef;
+}
+
+.team-member h4 {
+    margin: 10px 0 5px 0;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.team-role {
+    color: #007bff;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.team-bio {
+    color: #555;
+    font-size: 0.97rem;
+    margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+    .team-row {
+        gap: 16px;
+    }
+    .team-member {
+        max-width: 45%;
+    }
+}
+@media (max-width: 768px) {
+    .team-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-member {
+        max-width: 90%;
+    }
+}

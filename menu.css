@@ -1,0 +1,396 @@
+/* Overall Layout */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    background-color: #f8f9fa;
+    display: flex;
+    min-height: 100vh;
+}
+
+.container-fluid {
+    display: flex;
+    width: 100%;
+}
+
+.main-content-wrapper {
+    flex-grow: 1;
+    padding: 15px 80px 15px 120px; /* Increased left padding to move content further right */
+    margin-right: 280px;
+    transition: margin-right 0.3s ease;
+}
+
+/* Header */
+.app-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px; /* Added padding to give space before the line */
+    border-bottom: 2px solid #ccc; /* Made line bolder */
+    margin-left: -120px; /* Changed from -100px to -120px to move line more left */
+    width: calc(100% + 160px); /* Adjusted to maintain the same total width */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow effect */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding-left: 80px; /* Push logo and text back to original alignment */
+}
+
+.logo {
+    height: 70px;  /* Increased from 40px */
+    margin-right: 10px;
+    transition: transform 0.2s;
+}
+
+.logo:hover {
+    transform: scale(1.08) rotate(-2deg);
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Welcome Section */
+.welcome-section {
+    margin-bottom: 25px; /* Slightly reduced margin-bottom */
+}
+
+.welcome-heading {
+    font-size: 2.3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.welcome-heading span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.welcome-heading:hover span {
+    transform: rotate(20deg);
+    animation: wave 0.5s ease-in-out;
+}
+
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(20deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(20deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.welcome-message {
+    font-size: 0.95rem;
+    color: #777;
+    line-height: 1.4;
+}
+
+/* Card Base Styles */
+.tip-card, .activity-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    padding: 18px; /* Slightly reduced padding */
+    margin-bottom: 18px; /* Slightly reduced margin-bottom */
+}
+
+/* Daily Tip Section */
+.daily-tip-section .tip-card {
+    /* border: 1px solid #e0e0e0; */ /* Removed border */
+}
+
+.tip-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.tip-icon {
+    background-color: #007BFF; /* Updated to new primary blue */
+    color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-right: 10px;
+}
+
+.tip-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.close-tip-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #999;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-tip-btn:hover {
+    color: #333;
+}
+
+.tip-content {
+    font-size: 0.9rem; /* Slightly reduced font size */
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Recent Activity Section */
+.activity-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.activity-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.activity-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0; /* Slightly reduced padding */
+    border-bottom: 1px solid #eee;
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+}
+
+.activity-icon {
+    background-color: rgba(0, 123, 255, 0.1); /* Updated to transparent blue */
+    color: #007BFF; /* Ensure icon color matches primary blue */
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-right: 15px;
+}
+
+.activity-details {
+    flex-grow: 1;
+}
+
+.activity-name {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+    font-weight: 500;
+}
+
+.activity-time {
+    font-size: 0.85rem;
+    color: #999;
+}
+
+.activity-status {
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.activity-status.completed {
+    background-color: #e6ffe6;
+    color: #27ae60;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 280px;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 30px 20px 60px 20px; /* Increased bottom padding */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 0;
+}
+
+.profile-image-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.profile-icon-link {
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.profile-icon {
+    width: 15px;
+    height: 15px;
+    opacity: 0.8;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.profile-icon-link:hover .profile-icon {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+
+.profile-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.profile-email {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+.profile-dropdown-icon {
+    font-size: 1rem;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.profile-dropdown-icon:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar-nav li {
+    margin-bottom: 10px;
+}
+
+.sidebar-nav {
+    margin-bottom: 120px; /* Increased margin-bottom to move logout button further down */
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.nav-link i {
+    margin-right: 15px;
+    font-size: 1.1rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color: #0056b3;
+}
+
+.nav-link:hover i {
+    transform: scale(1.1);
+    color: #fff;
+}
+
+.logout-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 80%;
+    text-align: center;
+    transition: background-color 0.2s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+.logout-btn i {
+    margin-right: 10px;
+    transition: transform 0.2s ease;
+}
+
+.logout-btn:hover i {
+    transform: scale(1.1);
+}
+
+/* Responsive Design (basic) */
+@media (max-width: 768px) {
+    .main-content-wrapper {
+        margin-left: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        box-shadow: none;
+    }
+}
+
+/* Add hover effect to close tip button icon */
+.close-tip-btn i {
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.close-tip-btn:hover i {
+    transform: scale(1.1);
+    color: #333;
+}
+
+/* Add hover effect to activity icons */
+.activity-icon i {
+    transition: transform 0.2s ease;
+}
+
+.activity-item:hover .activity-icon i {
+    transform: scale(1.1);
+}

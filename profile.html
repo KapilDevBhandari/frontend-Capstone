@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <a href="./recognition.html" class="back-link"><img src="./image/backProfile.png" alt="Back" class="back-icon"></a>
+            <nav>
+                <ul>
+                    <li class="active"><a href="./profile.html"><span class="icon"><img src="./image/my profile.png" alt="Profile"></span> My Profile</a></li>
+                    <li><a href="./privacyandpolicy.html"><span class="icon"><img src="./image/privacy.png" alt="Privacy"></span> Privacy & Policy</a></li>
+                    <li><a href="./Termsandpolicy.html"><span class="icon"><img src="./image/term.png" alt="Terms"></span> Terms & Policy</a></li>
+                    <li><a href="./setting.html"><span class="icon"><img src="./image/setting.png" alt="Settings"></span> Settings</a></li>
+                </ul>
+            </nav>
+            <div class="danger-zone">
+                <span>Danger Zone</span>
+                <button class="delete-account">Delete Account</button>
+            </div>
+        </aside>
+        <main class="main-content">
+    
+            <section class="profile-card">
+                <div class="profile-header">
+                    <img src="./image/Profile image.png" alt="Profile" class="profile-pic">
+                    <div>
+                        <h3>Anushka Khadgi</h3>
+                        <p class="email">anushkakhadgi@gmail.com</p>
+                    </div>
+                    <button class="edit-btn" onclick="window.location.href='./profileSetting.html'">Edit</button>
+                </div>
+                <form class="profile-details">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" value="Anushka" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" value="Khadgi" disabled>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <input type="text" value="Female" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label>District</label>
+                            <input type="text" value="Kathmandu" disabled>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Language</label>
+                            <input type="text" value="Nepali" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="text" value="anushkakhadgi24@gmail.com" disabled>
+                        </div>
+                    </div>
+                </form>
+                <div class="email-section">
+                    <h4>My email Address</h4>
+                    <div class="email-list">
+                        <div class="email-item">
+                            <span class="email-icon">&#128231;</span>
+                            <div>
+                                <span>anushkaKhadgi@gmail.com</span>
+                                <small>1 month ago</small>
+                            </div>
+                        </div>
+                        <button class="add-email-btn">+Add Email Address</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

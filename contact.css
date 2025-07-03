@@ -1,0 +1,100 @@
+/* Basic styles for the Contact page based on the provided image */
+
+body {
+    font-family: 'Rubik', sans-serif; /* Use Rubik font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4; /* Light grey background for the page */
+}
+
+/* Add logo styles */
+.logo {
+    height: 70px;  /* Increased logo size */
+    transition: transform 0.2s;
+}
+
+.logo:hover {
+    transform: scale(1.08) rotate(-2deg);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 15px; /* Add horizontal padding */
+}
+
+.main-content {
+    margin-top: 30px; /* Space below the header */
+    margin-bottom: 30px; /* Space above the footer */
+}
+
+.contact-box {
+    background-color: #F8FAFC; /* Changed background color for contact boxes */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space between stacked contact boxes */
+}
+
+.contact-box h3 {
+    color: #333; /* Dark grey color for headings */
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: bold; /* Make headings bold */
+}
+
+.contact-box p {
+    color: #555; /* Slightly lighter color for text */
+    line-height: 1.8;
+}
+
+.contact-box .form-label {
+    font-weight: bold;
+    color: #555;
+}
+
+.contact-box .form-control {
+    border-radius: 5px;
+}
+
+.contact-box .btn-primary {
+    background-color: #007bff; /* Example primary blue color */
+    border-color: #007bff; /* Example primary blue color */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.social-icons a {
+    color: #555; /* Color for social icons */
+    font-size: 24px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Hover color for social icons */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .main-content {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .contact-box {
+        padding: 20px;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+}

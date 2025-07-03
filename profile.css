@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+.sidebar {
+    width: 220px;
+    background: #fff;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0 24px 0;
+    margin-top: 0px;
+}
+.sidebar-header {
+    padding: 24px 0 16px 24px;
+    font-size: 18px;
+    color: #bdbdbd;
+    font-weight: 500;
+}
+.sidebar nav {
+    margin-top: -15px;
+}
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar nav ul li {
+    padding: 14px 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #555;
+    border-left: 4px solid transparent;
+    transition: background 0.2s, border-color 0.2s;
+}
+.sidebar nav ul li.active, .sidebar nav ul li:hover {
+    background: #f0f4f8;
+    border-left: 4px solid #1976d2;
+    color: #1976d2;
+}
+.icon img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    vertical-align: middle;
+}
+.sidebar nav ul li .icon {
+    margin-right: 10px;
+    font-size: 18px;
+}
+.danger-zone {
+    margin: 32px 0 0 0;
+    padding: 0 24px;
+}
+.danger-zone span {
+    color: #e53935;
+    font-size: 12px;
+}
+.delete-account {
+    width: 100%;
+    margin-top: 8px;
+    padding: 10px 0;
+    background: #e53935;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.delete-account:hover {
+    background: #b71c1c;
+}
+.main-content {
+    flex: 1;
+    padding: 32px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.welcome-header {
+    width: 90%;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    border-radius: 8px;
+    padding: 10px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.notification {
+    font-size: 22px;
+    color: #bdbdbd;
+    cursor: pointer;
+}
+.profile-pic-small {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e0e0e0;
+}
+.profile-card {
+    width: 90%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    padding: 32px 40px 24px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 12px;
+}
+.profile-pic {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #e0e0e0;
+}
+.profile-header h3 {
+    margin: 0 0 4px 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+.profile-header .email {
+    color: #888;
+    font-size: 15px;
+}
+.edit-btn {
+    margin-left: auto;
+    background: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 22px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.edit-btn:hover {
+    background: #1565c0;
+}
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.form-row {
+    display: flex;
+    gap: 24px;
+}
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.form-group label {
+    font-size: 14px;
+    color: #888;
+}
+.form-group input {
+    padding: 10px 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background: #f7f7f7;
+    font-size: 15px;
+    color: #555;
+}
+.form-group input:disabled {
+    background: #f7f7f7;
+    color: #888;
+}
+.email-section {
+    margin-top: 12px;
+}
+.email-section h4 {
+    margin: 0 0 12px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+.email-list {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.email-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f0f4f8;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+.email-icon {
+    font-size: 20px;
+    color: #2196f3;
+}
+.add-email-btn {
+    background: #e3f2fd;
+    color: #1976d2;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 18px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.add-email-btn:hover {
+    background: #bbdefb;
+}
+.back-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 38px 0 8px 30px;
+    text-decoration: none;
+}
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.sidebar nav ul li.active a {
+    color: #1976d2;
+}
+.sidebar nav ul li:hover a {
+    color: #1976d2;
+}
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        padding: 0;
+        box-shadow: none;
+    }
+    .main-content, .profile-card, .welcome-header {
+        width: 100%;
+        padding: 16px;
+    }
+    .profile-card {
+        padding: 16px;
+    }
+    .form-row {
+        flex-direction: column;
+        gap: 12px;
+    }
+}

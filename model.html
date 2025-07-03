@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="model.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="image/project logo.png" alt="Logo" class="logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="nav-buttons">
+                    <a href="signin.html" class="btn btn-outline-primary">Sign In</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5 pt-5">
+        <!-- Header Section -->
+        <div class="bg-white p-4 mb-4 rounded shadow-sm border border-primary" style="border-width:2px !important;">
+            <h3 class="fw-bold mb-2">Nepali Sign Language Recognition Model</h3>
+            <p class="mb-0 text-muted">How our AI understands and translates hand gestures.</p>
+        </div>
+
+        <!-- How It Works -->
+        <div class="bg-white p-4 mb-4 rounded shadow-sm">
+            <h5 class="fw-bold text-center mb-4">How It Works</h5>
+            <div class="d-flex justify-content-center align-items-center flex-wrap gap-3">
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-circle mb-2 d-flex align-items-center justify-content-center" style="width:56px;height:56px;font-size:2rem;"><i class="fas fa-user"></i></div>
+                    <div class="small">User Sign</div>
+                </div>
+                <i class="fas fa-arrow-right fa-2x text-primary"></i>
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-circle mb-2 d-flex align-items-center justify-content-center" style="width:56px;height:56px;font-size:2rem;"><i class="fas fa-camera"></i></div>
+                    <div class="small">Camera</div>
+                </div>
+                <i class="fas fa-arrow-right fa-2x text-primary"></i>
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-circle mb-2 d-flex align-items-center justify-content-center" style="width:56px;height:56px;font-size:2rem;"><i class="fas fa-robot"></i></div>
+                    <div class="small">AI Model</div>
+                </div>
+                <i class="fas fa-arrow-right fa-2x text-primary"></i>
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-circle mb-2 d-flex align-items-center justify-content-center" style="width:56px;height:56px;font-size:2rem;"><i class="fas fa-file-alt"></i></div>
+                    <div class="small">Output</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Row -->
+        <div class="row mb-4 g-3">
+            <div class="col-md-4">
+                <div class="bg-white p-3 rounded shadow-sm text-center h-100">
+                    <div class="fw-bold fs-4 text-primary">93.5%</div>
+                    <div class="text-muted">Accuracy</div>
+                    <div class="small">Recognition rate</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-white p-3 rounded shadow-sm text-center h-100">
+                    <div class="fw-bold fs-4 text-primary">100+</div>
+                    <div class="text-muted">Signs</div>
+                    <div class="small">Supported gestures</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-white p-3 rounded shadow-sm text-center h-100">
+                    <div class="fw-bold fs-4 text-primary">&lt;50ms</div>
+                    <div class="text-muted">Speed</div>
+                    <div class="small">Processing time</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Model Summary -->
+        <div class="bg-white p-4 mb-4 rounded shadow-sm">
+            <h5 class="fw-bold mb-3">Model Summary</h5>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="border rounded p-3 h-100">
+                        <div class="fw-bold mb-2">Technical Details</div>
+                        <div class="row small mb-1">
+                            <div class="col-6 text-muted">Model Name:</div>
+                            <div class="col-6 fw-semibold">NSLNet</div>
+                        </div>
+                        <div class="row small mb-1">
+                            <div class="col-6 text-muted">Architecture:</div>
+                            <div class="col-6 fw-semibold">CNN-based</div>
+                        </div>
+                        <div class="row small mb-1">
+                            <div class="col-6 text-muted">Input Type:</div>
+                            <div class="col-6 fw-semibold">Hand Gesture</div>
+                        </div>
+                        <div class="row small">
+                            <div class="col-6 text-muted">Output Type:</div>
+                            <div class="col-6 fw-semibold">Nepali Text</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="border rounded p-3 h-100">
+                        <div class="fw-bold mb-2">Quick Notes</div>
+                        <ul class="small mb-0 ps-3">
+                            <li>Supports 100+ common Nepali signs</li>
+                            <li>Requires good lighting conditions</li>
+                            <li>New signs added monthly</li>
+                            <li>Optimized for real-time use</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Example Recognition -->
+        <div class="bg-white p-4 mb-4 rounded shadow-sm">
+            <h5 class="fw-bold mb-3">Example Recognition</h5>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="bg-light rounded p-3 h-100 d-flex flex-column align-items-center justify-content-center">
+                        <img src="image/namaste.png" alt="Namaste" class="mb-3 example-img">
+                        <div class="row w-100 align-items-center">
+                            <div class="col-7">
+                                <div class="fw-semibold mb-1 text-start">नमस्ते</div>
+                                <div class="text-muted small mb-0 text-start">Recognized Sign</div>
+                            </div>
+                            <div class="col-5 text-end">
+                                <div class="fw-bold text-primary example-percent">95%</div>
+                                <div class="example-confidence">Confidence</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="bg-light rounded p-3 h-100 d-flex flex-column align-items-center justify-content-center">
+                        <img src="image/asal.png" alt="Thumbs Up" class="mb-3 example-img">
+                        <div class="row w-100 align-items-center">
+                            <div class="col-7">
+                                <div class="fw-semibold mb-1 text-start">असल</div>
+                                <div class="text-muted small mb-0 text-start">Recognized Sign</div>
+                            </div>
+                            <div class="col-5 text-end">
+                                <div class="fw-bold text-primary example-percent">92%</div>
+                                <div class="example-confidence">Confidence</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
